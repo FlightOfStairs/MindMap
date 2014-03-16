@@ -1,9 +1,7 @@
 @(section: String)
 
 @pages = @{Seq(
-    ("index", "Home", routes.Application.index),
-    ("cv", "CV", routes.Application.cv),
-    ("likes", "Things I like", routes.Application.likes)
+    ("index", "Index", routes.Application.index)
 )}
 
 <div class="navbar navbar-default" role="navigation">
@@ -13,7 +11,7 @@
             <span>Pages</span> 
             <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" href="@routes.Application.index#">@Messages("title.short")</a>
+        <a class="navbar-brand" href="@routes.Application.index#">@Messages("title")</a>
     </div>
     <div class="navbar-collapse collapse" id="nav-menu-collapse">
         <ul class="nav navbar-nav pages-nav">

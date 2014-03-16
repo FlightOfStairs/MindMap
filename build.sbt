@@ -1,4 +1,4 @@
-name := "flightofstairs.org"
+name := "MindMap"
 
 version := "1.0-SNAPSHOT"
 
