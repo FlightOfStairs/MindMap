@@ -10,17 +10,8 @@ class IntegrationSpec extends Specification {
   "Application" should {
     "show the index page" in new WithBrowser {
       browser.goTo("http://localhost:" + port)
-      browser.pageSource must contain("About me")
-      browser.pageSource must contain("Please check out")
-    }
-
-    "show my cv" in new WithBrowser {
-      browser.goTo("http://localhost:" + port + "/cv")
-      browser.pageSource must contain("Tech skills")
-      browser.pageSource must contain("Work history")
-      browser.pageSource must contain("Amazon.com")
-      browser.pageSource must contain("Education")
-      browser.pageSource must contain("Contact")
+      browser.pageSource must contain("MindMap")
+      browser.pageSource must contain("Coming soon.")
     }
   }
 }
