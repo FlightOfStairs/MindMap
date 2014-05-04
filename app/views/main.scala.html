@@ -38,7 +38,7 @@
             @menus.footer()
         </div>
 
-        @Html(org.webjars.play.RequireJS.setup("javascripts/app"))
+        @Html(org.webjars.play.RequireJS.setup("javascripts/main"))
 
         @for(script <- additionalScripts) {
         <script src="@script" type="text/javascript"></script>
