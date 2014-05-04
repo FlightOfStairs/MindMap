@@ -1,2 +1,2 @@
-require ['jquery'], ($) ->
-  $('#mindmap').text("lol")
+require ['jquery', 'bootstrap'], ($, bs) ->
+  $('#mindmap').text(JSON.stringify(bs))
